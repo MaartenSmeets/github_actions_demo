@@ -27,6 +27,7 @@ jobs:
       with:
          path: | 
            ~/.m2
+           ~/.cache/google-cloud-tools-java/jib           
          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
          restore-keys: ${{ runner.os }}-m2           
 
